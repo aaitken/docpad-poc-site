@@ -11,7 +11,8 @@
     "docpad-plugin-coffeescript": "~2.2.2",
     "docpad-plugin-haml": "~2.0.2",
     "docpad-plugin-hamlcoffee": "0.0.0",
-    "docpad-plugin-sass": "~2.5.0"
+    "docpad-plugin-sass": "~2.5.0",
+    "docpad-plugin-coffeekup": "~2.1.6"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
