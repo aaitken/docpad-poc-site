@@ -1,0 +1,3 @@
+[submodule "src/documents/styles/foundation"]
+	path = src/documents/styles/foundation
+	url = https://github.com/zurb/foundation.git
