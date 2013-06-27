@@ -18,3 +18,4 @@ html ->
       $(document).ready ->
         alert 'Alerts suck!'
   body ->
+    h1 "test"
