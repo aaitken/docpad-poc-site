@@ -11,4 +11,5 @@ div class:'row', ->
     div class:'row', ->
       div class: 'large-12 columns', ->
         h2("Product Plan")
-      
+  
+  @partial('side-nav.html.coffee')
