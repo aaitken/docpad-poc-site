@@ -3,7 +3,7 @@ div class:"large-3 pull-9 columns", ->
     
     section class:"section active", ->
       p class:"title", ->
-        a("Documentation")
+        a("Plans")
       div class:"content", ->
         ul class:"side-nav", ->
           li ->
@@ -17,6 +17,10 @@ div class:"large-3 pull-9 columns", ->
             a("New Feature Requirements")
           li ->
             a("Feature Backlog")
+
+    section class:"section", ->
+      p class:"title", ->
+        a("Requirements")
 
     section class:"section", ->
       p class:"title", ->
