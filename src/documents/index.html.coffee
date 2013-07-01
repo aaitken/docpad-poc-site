@@ -3,6 +3,8 @@
 layout: 'default'
 description: 'Muse Studio Product Documentation'
 pageStyles: 'test'
+pageScripts: 'test'
+
 
 ---
 

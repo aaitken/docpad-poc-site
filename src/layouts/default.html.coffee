@@ -29,5 +29,8 @@ html ->
 
     @content
 
+    #if doc.pageScripts?
+      #script(src:doc.pageScripts)
+
 
 
