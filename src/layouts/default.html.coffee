@@ -10,9 +10,10 @@ html ->
     title("Docpad")
     if doc.description?
       meta(name:"description", content:doc.description)
-    link(rel:"stylesheet", href:"/styles/app.css")
-    if doc.pageStyles?
-      link(rel:"stylesheet", href:doc.pageStyles)
+    
+    stylesheets = ['/styles/app.css']
+    #if doc.pageStyles? then stylesheets.push[doc.pageStyles]
+    @getBlock('styles').add(stylesheets).toHTML()
 
   body ->
 
@@ -29,8 +30,8 @@ html ->
 
     @content
 
-    #if doc.pageScripts?
-      #script(src:doc.pageScripts)
+    #scripts = ['test.js']
+    #@getBlock('scripts').toHTML()
 
 
 
