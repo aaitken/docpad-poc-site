@@ -1,18 +1,14 @@
 doctype 5
 html ->
 
-  #alias metadata object
-  doc = @document
-  
   head ->
     
     meta(charset:"utf-8")
     title("Docpad")
-    if doc.description?
-      meta(name:"description", content:doc.description)
+    if @document.description?
+      meta(name:"description", content:@document.description)
     
     stylesheets = ['/styles/app.css']
-    #if doc.pageStyles? then stylesheets.push[doc.pageStyles]
     @getBlock('styles').add(stylesheets).toHTML()
 
   body ->
@@ -25,13 +21,11 @@ html ->
 
     div class:"row", ->
       div class:"large-12 columns", ->
-        h1(class:"docs header", "Muse Studio Product Development")
+        h1(class:"docs header", "Muse Studio Product Devlopment")
         hr()
 
-    @content
-
-    #scripts = ['test.js']
-    #@getBlock('scripts').toHTML()
+    text(@content)
+    text(@getBlock('scripts').toHTML())
 
 
 
