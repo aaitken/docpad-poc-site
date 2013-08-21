@@ -25,7 +25,7 @@ html ->
         hr()
 
     text(@content)
-    text(@getBlock('scripts').toHTML())
+    text(@getBlock('scripts').add(['/scripts/test.js','https://apis.google.com/js/client.js?onload=handleClientLoad']).toHTML())
 
 
 
