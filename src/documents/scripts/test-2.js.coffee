@@ -57,6 +57,14 @@ requestHtmlContent = ->
     headers: {Authorization: 'Bearer ' + ACCESS_TOKEN}})
   jqxhr.done ->
     html = jqxhr.responseText
-    $('#target').html(html)
+    $target = $('#target')
+    $target.html(html)
+    $style = $target.find('style')
+    text = $style.text()
+    text = '#target ' + text.replace(/}/g, '}#target ') #contextualize gdrive styles
+    $style.text(text)
+    $style.next().hide()
+
+
   jqxhr.fail -> alert("error")
   jqxhr.always ->
