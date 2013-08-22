@@ -6,6 +6,8 @@ SCOPES = [
   'https://www.googleapis.com/auth/drive.file'
   'https://www.googleapis.com/auth/drive.metadata.readonly'
   'https://www.googleapis.com/auth/drive.readonly']
+RESP = null
+ACCESS_TOKEN = null
 
 
 window.handleClientLoad = ->
@@ -28,6 +30,7 @@ handleAuthResult = (authResult)->
   filePicker.style.display = 'none'
 
   if authResult && !authResult.error
+    ACCESS_TOKEN = authResult.access_token
     getRoadmap()
   else
     authButton.style.display = 'block'
@@ -44,6 +47,15 @@ getRoadmap = ->
   gapi.client.load 'drive', 'v2', ->
     request = gapi.client.drive.files.get({'fileId': '1hldsiViTglGZHeaNy1znu094Y5jVfb7iMZqcfHCpC1w'})
     request.execute (resp)->
-      console.log(resp.webContentLink)
-      document.getElementById('target').src = resp.embedLink
-      
+      RESP = resp
+      requestHtmlContent()
+   
+requestHtmlContent = ->
+  htmlContentLink = RESP.exportLinks['text/html']
+  jqxhr = $.ajax({
+    url: htmlContentLink
+    headers: {Authorization: 'Bearer ' + ACCESS_TOKEN}})
+  jqxhr.done ->
+    console.log jqxhr.responseText
+  jqxhr.fail -> alert("error")
+  jqxhr.always ->
