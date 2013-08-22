@@ -21,7 +21,7 @@ html ->
 
     div class:"row", ->
       div class:"large-12 columns", ->
-        h1(class:"docs header", "Muse Studio Product Devlopment")
+        h1(class:"docs header", "Muse Studio Product Development")
         hr()
 
     text(@content)
