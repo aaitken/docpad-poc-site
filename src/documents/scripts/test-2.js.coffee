@@ -11,7 +11,7 @@ ACCESS_TOKEN = null
 
 
 window.handleClientLoad = ->
-  window.setTimeout(checkAuth, 1)
+  checkAuth()
 
 
 #Check if the current user has authorized the application.
