@@ -44,5 +44,6 @@ getRoadmap = ->
   gapi.client.load 'drive', 'v2', ->
     request = gapi.client.drive.files.get({'fileId': '1hldsiViTglGZHeaNy1znu094Y5jVfb7iMZqcfHCpC1w'})
     request.execute (resp)->
-      console.log(resp)
+      console.log(resp.webContentLink)
+      document.getElementById('target').src = resp.embedLink
       
