@@ -56,6 +56,7 @@ requestHtmlContent = ->
     url: htmlContentLink
     headers: {Authorization: 'Bearer ' + ACCESS_TOKEN}})
   jqxhr.done ->
-    console.log jqxhr.responseText
+    html = jqxhr.responseText
+    $('#target').html(html)
   jqxhr.fail -> alert("error")
   jqxhr.always ->
