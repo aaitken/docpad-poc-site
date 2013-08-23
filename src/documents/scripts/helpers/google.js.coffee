@@ -2,7 +2,6 @@ class window.MUSE.Google
 
   constructor: ->
     @authButton = document.getElementById('authorizeButton')
-    @filePicker = document.getElementById('filePicker') #not needed
     @clientId = '646673521317.apps.googleusercontent.com' #from API console
     @scopes = [
       'https://www.googleapis.com/auth/drive'
@@ -55,6 +54,7 @@ class window.MUSE.Google
     if authResult && !authResult.error
       @accessToken = authResult.access_token
       @_getDocumentData()
+      @_hideEls()
     else
       @authButton.style.display = 'block'
       @authButton.onclick = => @checkAuth(false)
@@ -62,7 +62,6 @@ class window.MUSE.Google
 
   _hideEls: ->
     @authButton.style.display = 'none'
-    @filePicker.style.display = 'none'
 
 
   _init: ->
