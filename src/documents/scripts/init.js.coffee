@@ -1,7 +1,5 @@
-#instance instantiation
-google = window.MUSE.google = new window.MUSE.Google()
-
-
 #google api load listener
+#convoluted BUT... it seems the handling funtion needs to be defined before it's parameterized by the google api call
+#even though its invocation waits for the api onload
 window.handleClientLoad = ->
-  setTimeout((-> google.checkAuth.apply(google)), 1)
+  window.handleClientLoad2()

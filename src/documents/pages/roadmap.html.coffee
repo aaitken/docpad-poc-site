@@ -2,10 +2,10 @@
 
 layout: 'default'
 description: 'Muse Studio Product Documentation'
-styles: 'test'
+styles: ['/styles/pages/roadmap.css']
 scripts: [
   '/scripts/helpers/google.js'
-  '/scripts/init.js']
+  '/scripts/pages/roadmap/init.js']
 
 ---
 
