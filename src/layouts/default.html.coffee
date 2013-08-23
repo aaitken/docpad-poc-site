@@ -17,11 +17,11 @@ html ->
       ul class:"title-area", ->
         li class:"name", ->
           h1 ->
-            a(href:"#", "Muse Studio")
+            a(href:"/", "Muse Studio")
 
     div class:"row", ->
       div class:"large-12 columns", ->
-        h1(class:"docs header", "Muse Studio Product Devlopment")
+        h1(class:"docs header", "Muse Studio Product Development")
         hr()
 
     text(@content)

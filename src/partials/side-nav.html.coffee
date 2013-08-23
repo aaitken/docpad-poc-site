@@ -3,20 +3,20 @@ div class:"large-3 pull-9 columns", ->
     
     section class:"section active", ->
       p class:"title", ->
-        a("Plans")
+        a "Plans"
       div class:"content", ->
         ul class:"side-nav", ->
           li ->
-            a("Product Plan")
+            a href:"#", "Product Plan"
           li ->
-            a("Product Roadmap")
+            a href:"/pages/roadmap.html", "Product Roadmap"
           li ->
             a("Current Theme")
-          li(class:"divider")
-          li ->
-            a("New Feature Requirements")
-          li ->
-            a("Feature Backlog")
+          #li(class:"divider")
+          #li ->
+            #a("New Feature Requirements")
+          #li ->
+            #a("Feature Backlog")
 
     section class:"section", ->
       p class:"title", ->

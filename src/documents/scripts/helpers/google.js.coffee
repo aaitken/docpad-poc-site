@@ -3,7 +3,7 @@ class window.MUSE.Google
   constructor: ->
     @authButton = document.getElementById('authorizeButton')
     @filePicker = document.getElementById('filePicker') #not needed
-    @clientId = '646673521317.apps.googleusercontent.com'
+    @clientId = '646673521317.apps.googleusercontent.com' #from API console
     @scopes = [
       'https://www.googleapis.com/auth/drive'
       'https://www.googleapis.com/auth/drive.appdata'
