@@ -26,6 +26,8 @@ html ->
 
     text(@content)
     text(@getBlock('scripts').add([
-      '/scripts/jquery-2.0.3.js'
-      '/scripts/test-3.js'
+      '/scripts/vendor/jquery-2.0.3.js'
+      '/scripts/namespaces.js'
+      '/scripts/helpers/google.js'
+      '/scripts/init.js'
       'https://apis.google.com/js/client.js?onload=handleClientLoad']).toHTML())
