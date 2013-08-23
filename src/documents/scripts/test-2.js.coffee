@@ -23,6 +23,7 @@ checkAuth = ->
 
 
 handleAuthResult = (authResult)->
+  debugger
 
   authButton = document.getElementById('authorizeButton')
   filePicker = document.getElementById('filePicker')

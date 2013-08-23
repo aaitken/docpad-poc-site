@@ -1,8 +1,8 @@
-MUSE = {}
+window.MUSE = {}
 
 
-window.handleClientLoad = (->
-  MUSE.google.checkAuth()).apply(MUSE.google)
+window.handleClientLoad = ->
+  setTimeout((-> window.MUSE.google.checkAuth.apply(window.MUSE.google)), 1)
 
 
 class MUSE.Google
@@ -22,27 +22,27 @@ class MUSE.Google
 
 
   #public
-  #fat arrow required per event handling
-  checkAuth: ->
-    debugger
+  checkAuth: (immediate = true)->
     window.gapi.auth.authorize({
       client_id: @clientId
       scope: @scopes
-      immediate: true}, @handleAuthResult)
+      immediate: immediate}, (authResult)=>
+        @authResult = authResult
+        @handleAuthResult())
 
 
   _getDocumentData: ->
-    gapi.client.load 'drive', 'v2', ->
+    gapi.client.load 'drive', 'v2', =>
       request = gapi.client.drive.files.get({'fileId': '1hldsiViTglGZHeaNy1znu094Y5jVfb7iMZqcfHCpC1w'}) #roadmap
-      request.execute (resp)->
+      request.execute (resp)=>
         @resp = resp
-        @getDocumentHtml()
+        @_getDocumentHtml()
 
 
   _getDocumentHtml: ->
     htmlExportLink = @resp.exportLinks['text/html']
     jqxhr = $.ajax({
-      url: htmlContentLink
+      url: htmlExportLink
       headers: {Authorization: 'Bearer ' + @accessToken}})
     jqxhr.done ->
       html = jqxhr.responseText
@@ -57,13 +57,14 @@ class MUSE.Google
     jqxhr.always ->
 
 
-  handleAuthResult: (authResult)=>
+  handleAuthResult: (authResult)->
+    authResult = @authResult
     if authResult && !authResult.error
       @accessToken = authResult.access_token
-      @_getDocumentHtml()
+      @_getDocumentData()
     else
       @authButton.style.display = 'block'
-      @authButton.onclick = => @_checkAuth()
+      @authButton.onclick = => @checkAuth(false)
 
 
   _hideEls: ->
@@ -75,5 +76,4 @@ class MUSE.Google
     @_hideEls()
 
 
-MUSE.google = new MUSE.Google()
-debugger
+window.MUSE.google = new MUSE.Google()
