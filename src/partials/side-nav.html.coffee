@@ -9,7 +9,7 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"#", "Product Plan"
           li ->
-            a href:"/pages/roadmap.html", "Product Roadmap"
+            a href:"/pages/roadmap.html", "Roadmap"
           li ->
             a("Current Theme")
           #li(class:"divider")
