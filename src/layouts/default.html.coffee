@@ -8,8 +8,7 @@ html ->
     if @document.description?
       meta(name:"description", content:@document.description)
     
-    stylesheets = ['/styles/app.css']
-    @getBlock('styles').add(stylesheets).toHTML()
+    @getBlock('styles').add(['/styles/app.css'].concat(@document.styles)).toHTML()
 
   body ->
 
