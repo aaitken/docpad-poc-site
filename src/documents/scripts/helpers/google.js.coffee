@@ -35,20 +35,23 @@ class window.MUSE.Google
 
   _getDocumentHtml: ->
     htmlExportLink = @resp.exportLinks['text/html']
-    jqxhr = $.ajax({
+    @jqxhr = $.ajax({
       url: htmlExportLink
       headers: {Authorization: 'Bearer ' + @accessToken}})
-    jqxhr.done ->
-      html = jqxhr.responseText
+    @_makePromises()
+
+
+  _makePromises: ->
+    @jqxhr.done =>
+      html = @jqxhr.responseText
       $target = $('#target')
       $target.html(html)
       $style = $target.find('style')
       text = $style.text()
       text = '#target ' + text.replace(/}/g, '}#target ') #contextualize gdrive styles
       $style.text(text)
-      $style.next().hide()
-    jqxhr.fail -> alert("error")
-    jqxhr.always ->
+    @jqxhr.fail -> alert("error")
+    @jqxhr.always ->
 
 
   _handleAuthResult: (authResult)->

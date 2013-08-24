@@ -7,7 +7,7 @@ div class:"large-3 pull-9 columns", ->
       div class:"content", ->
         ul class:"side-nav", ->
           li ->
-            a href:"#", "Product Plan"
+            a href:"/pages/product-plan.html", "Product Plan"
           li ->
             a href:"/pages/roadmap.html", "Roadmap"
           li ->
