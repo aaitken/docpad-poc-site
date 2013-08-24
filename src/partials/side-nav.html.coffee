@@ -12,6 +12,8 @@ div class:"large-3 pull-9 columns", ->
             a href:"/pages/roadmap.html", "Roadmap"
           li ->
             a href:"/pages/current-theme.html", "Current Theme"
+          li ->
+            a href:"#", "Current Iteration"
           #li(class:"divider")
           #li ->
             #a("New Feature Requirements")
@@ -25,3 +27,13 @@ div class:"large-3 pull-9 columns", ->
     section class:"section", ->
       p class:"title", ->
         a("Prototypes")
+
+    section class:"section", ->
+      p class:"title", ->
+        a "Status"
+      div class:"content", ->
+        ul class:"side-nav", ->
+          li ->
+            a href:"#", "Weekly Report"
+          li ->
+            a href:"#", "Retainer Burndown"
