@@ -14,25 +14,22 @@ div class:"large-3 pull-9 columns", ->
             a href:"/pages/current-theme.html", "Current Theme"
           li ->
             a href:"#", "Current Iteration"
-          #li(class:"divider")
-          #li ->
-            #a("New Feature Requirements")
-          #li ->
-            #a("Feature Backlog")
 
     section class:"section", ->
       p class:"title", ->
-        a("Requirements")
+        a "Requirements"
 
     section class:"section", ->
       p class:"title", ->
-        a("Prototypes")
+        a "Prototypes"
 
     section class:"section", ->
       p class:"title", ->
         a "Status"
       div class:"content", ->
         ul class:"side-nav", ->
+          li ->
+            a href:"#", "Meeting Minutes"
           li ->
             a href:"#", "Weekly Report"
           li ->
