@@ -11,7 +11,7 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"/pages/roadmap.html", "Roadmap"
           li ->
-            a("Current Theme")
+            a href:"/pages/current-theme.html", "Current Theme"
           #li(class:"divider")
           #li ->
             #a("New Feature Requirements")
