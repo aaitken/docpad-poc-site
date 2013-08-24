@@ -2,10 +2,13 @@
 
 layout: 'default'
 description: 'Muse Studio Product Plan'
-styles: ['/styles/pages/plans/product-plan.css']
+styles: [
+  '/styles/pages/plans/product-plan.css'
+  '/styles/pages/plans/nav.css']
 scripts: [
   '/scripts/helpers/google.js'
-  '/scripts/pages/plans/product-plan/init.js']
+  '/scripts/pages/plans/product-plan/init.js'
+  '/scripts/pages/plans/init.js']
 
 ---
 
