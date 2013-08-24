@@ -2,7 +2,9 @@
 
 layout: 'default'
 description: 'Muse Studio Current Theme'
-styles: ['/styles/pages/plans/current-theme.css']
+styles: [
+  '/styles/pages/plans/current-theme.css'
+  '/styles/pages/plans/nav.css']
 scripts: [
   '/scripts/helpers/google.js'
   '/scripts/pages/plans/current-theme/init.js']

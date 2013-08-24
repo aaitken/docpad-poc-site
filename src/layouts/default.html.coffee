@@ -27,5 +27,6 @@ html ->
     text(@getBlock('scripts').add([
       '/scripts/vendor/jquery-2.0.3.js'
       '/scripts/namespaces.js'
+      '/scripts/helpers/avoid-flicker.js'
       '/scripts/init.js'
       'https://apis.google.com/js/client.js?onload=handleClientLoad'].concat(@document.scripts)).toHTML())
