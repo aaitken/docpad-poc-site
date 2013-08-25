@@ -3,8 +3,8 @@
 layout: 'default'
 description: 'Muse Studio Current Theme'
 styles: [
-  '/styles/pages/plans/current-theme.css'
-  '/styles/pages/plans/nav.css']
+  '/styles/plans/current-theme.css'
+  '/styles/plans/nav.css']
 scripts: [
   '/scripts/util/google.js'
   '/scripts/pages/plans/current-theme.js'

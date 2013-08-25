@@ -3,8 +3,8 @@
 layout: 'default'
 description: 'Muse Studio Roadmap'
 styles: [
-  '/styles/pages/plans/roadmap.css'
-  '/styles/pages/plans/nav.css']
+  '/styles/plans/roadmap.css'
+  '/styles/plans/nav.css']
 scripts: [
   '/scripts/util/google.js'
   '/scripts/pages/plans/roadmap.js'

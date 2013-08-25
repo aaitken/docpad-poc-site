@@ -3,8 +3,8 @@
 layout: 'default'
 description: 'Muse Studio Product Plan'
 styles: [
-  '/styles/pages/plans/product-plan.css'
-  '/styles/pages/plans/nav.css']
+  '/styles/plans/product-plan.css'
+  '/styles/plans/nav.css']
 scripts: [
   '/scripts/util/google.js'
   '/scripts/pages/plans/product-plan.js'
