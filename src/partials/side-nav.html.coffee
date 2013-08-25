@@ -1,5 +1,5 @@
 div class:"large-3 pull-9 columns", ->
-  div class:"section-container accordion", ->
+  div class:"section-container accordion", id:"nav-side", ->
     
     section class:"section", ->
       p class:"title", ->
