@@ -30,6 +30,7 @@ class window.MUSE.Google
       request = gapi.client.drive.files.get({'fileId': @documentId})
       request.execute (resp)=>
         @resp = resp
+        debugger
         @_getDocumentHtml()
 
 

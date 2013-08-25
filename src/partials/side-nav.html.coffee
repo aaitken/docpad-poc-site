@@ -31,7 +31,7 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"#", "Placeholder"
 
-    section class:"section", ->
+    section class:"section status", ->
       p class:"title", ->
         a "Status"
       div class:"content", ->
@@ -41,4 +41,4 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"#", "Weekly Report"
           li ->
-            a href:"#", "Retainer Burndown"
+            a href:"/pages/status/retainer-burndown.html", "Retainer Burndown"
