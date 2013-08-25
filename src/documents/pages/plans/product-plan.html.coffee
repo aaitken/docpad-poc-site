@@ -6,7 +6,7 @@ styles: [
   '/styles/pages/plans/product-plan.css'
   '/styles/pages/plans/nav.css']
 scripts: [
-  '/scripts/helpers/google.js'
+  '/scripts/util/google.js'
   '/scripts/pages/plans/product-plan/init.js'
   '/scripts/pages/plans/init.js']
 

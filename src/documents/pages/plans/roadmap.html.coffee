@@ -6,7 +6,7 @@ styles: [
   '/styles/pages/plans/roadmap.css'
   '/styles/pages/plans/nav.css']
 scripts: [
-  '/scripts/helpers/google.js'
+  '/scripts/util/google.js'
   '/scripts/pages/plans/roadmap/init.js'
   '/scripts/pages/plans/init.js']
 

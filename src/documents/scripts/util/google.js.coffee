@@ -27,7 +27,7 @@ class window.MUSE.Google
 
   _getDocumentData: ->
     gapi.client.load 'drive', 'v2', =>
-      request = gapi.client.drive.files.get({'fileId': @documentId}) #roadmap
+      request = gapi.client.drive.files.get({'fileId': @documentId})
       request.execute (resp)=>
         @resp = resp
         @_getDocumentHtml()
