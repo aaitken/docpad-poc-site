@@ -5,7 +5,7 @@ div class:"large-3 pull-9 columns", ->
       p class:"title", ->
         a "Plans"
       div class:"content", ->
-        ul class:"side-nav", ->
+        ul class:"side-nav plans", ->
           li ->
             a href:"/pages/plans/product-plan.html", "Product Plan"
           li ->

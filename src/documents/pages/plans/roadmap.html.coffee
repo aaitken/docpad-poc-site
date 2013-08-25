@@ -7,8 +7,9 @@ styles: [
   '/styles/pages/plans/nav.css']
 scripts: [
   '/scripts/util/google.js'
-  '/scripts/pages/plans/roadmap/init.js'
-  '/scripts/pages/plans/init.js']
+  '/scripts/pages/plans/roadmap.js'
+  '/scripts/pages/all.js'
+  '/scripts/pages/plans/all.js']
 
 ---
 
