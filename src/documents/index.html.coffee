@@ -2,8 +2,8 @@
 
 layout: 'default'
 description: 'Muse Studio Product Documentation'
-pageStyles: 'test'
-pageScripts: 'test'
+scripts: [
+  '/scripts/pages/all.js']
 
 ---
 

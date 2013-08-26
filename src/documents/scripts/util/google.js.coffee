@@ -1,10 +1,11 @@
 class window.MUSE.Google
 
   #options.documentId - google id of doc to retrieve
-  constructor: (options = {})->
+  constructor: (options = {}, html = true)->
     @authButton = document.getElementById('authorizeButton')
     @clientId = '646673521317.apps.googleusercontent.com' #from API console
     @documentId = options.documentId
+    @html = html
     @scopes = [
       'https://www.googleapis.com/auth/drive'
       'https://www.googleapis.com/auth/drive.appdata'
@@ -30,8 +31,7 @@ class window.MUSE.Google
       request = gapi.client.drive.files.get({'fileId': @documentId})
       request.execute (resp)=>
         @resp = resp
-        debugger
-        @_getDocumentHtml()
+        if @html then @_getDocumentHtml()
 
 
   _getDocumentHtml: ->
