@@ -1,11 +1,11 @@
 div class:"large-3 pull-9 columns", ->
   div class:"section-container accordion", id:"nav-side", ->
     
-    section class:"section", ->
+    section class:"section plans", ->
       p class:"title", ->
         a "Plans"
       div class:"content", ->
-        ul class:"side-nav plans", ->
+        ul class:"side-nav", ->
           li ->
             a href:"/pages/plans/product-plan.html", "Product Plan"
           li ->
@@ -13,7 +13,7 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"/pages/plans/current-theme.html", "Current Theme"
           li ->
-            a href:"#", "Current Iteration"
+            a href:"/pages/plans/current-iteration.html", "Current Iteration"
 
     section class:"section", ->
       p class:"title", ->
@@ -21,7 +21,7 @@ div class:"large-3 pull-9 columns", ->
       div class:"content", ->
         ul class:"side-nav", ->
           li ->
-            a href:"#", "Placeholder"
+            a style:"cursor: default", "Placeholder"
 
     section class:"section", ->
       p class:"title", ->
@@ -29,7 +29,7 @@ div class:"large-3 pull-9 columns", ->
       div class:"content", ->
         ul class:"side-nav", ->
           li ->
-            a href:"#", "Placeholder"
+            a style:"cursor: default", "Placeholder"
 
     section class:"section status", ->
       p class:"title", ->
@@ -37,8 +37,10 @@ div class:"large-3 pull-9 columns", ->
       div class:"content", ->
         ul class:"side-nav", ->
           li ->
-            a href:"#", "Meeting Minutes"
+            a href:"/pages/status/on-tap.html", "On Tap"
           li ->
-            a href:"#", "Weekly Report"
+            a style:"cursor: default", "Meeting Minutes"
           li ->
-            a href:"/pages/status/retainer-burndown.html", "Retainer Burndown"
+            a style:"cursor: default", "Weekly Report"
+          li ->
+            a href:"/pages/status/retainer-burndown.html", "Hours Burndown"
