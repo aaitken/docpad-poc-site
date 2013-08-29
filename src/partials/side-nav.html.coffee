@@ -26,7 +26,7 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a style:"font-style: italic", href:"/pages/requirements/feature-update-backlog.html", "Feature Update Backlog"
           li ->
-            a style:"font-style: italic", href:"/pages/plans/current-iteration.html", "New Feature Backlog"
+            a style:"font-style: italic", href:"/pages/requirements/new-feature-backlog.html", "New Feature Backlog"
           li ->
             a style:"cursor: default; font-style: italic", "Jank"
 
