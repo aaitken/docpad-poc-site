@@ -22,6 +22,9 @@ div class:"large-3 pull-9 columns", ->
         ul class:"side-nav", ->
           li ->
             a style:"cursor: default", "Placeholder"
+          li class:"divider"
+          li ->
+            a style:"cursor: default; font-style: italic", "Backlog"
 
     section class:"section", ->
       p class:"title", ->
