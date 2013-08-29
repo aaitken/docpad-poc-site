@@ -21,7 +21,7 @@ div class:"large-3 pull-9 columns", ->
       div class:"content", ->
         ul class:"side-nav", ->
           li ->
-            a href:"/pages/requirements/magazine.html", "Magazine"
+            a href:"/pages/requirements/nfr-magazine.html", "NFR Magazine"
           li class:"divider"
           li ->
             a style:"font-style: italic", href:"/pages/requirements/feature-update-backlog.html", "Feature Update Backlog"
