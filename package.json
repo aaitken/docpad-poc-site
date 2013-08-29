@@ -13,7 +13,7 @@
     "docpad-plugin-coffeekup": "~2.1.6",
     "docpad-plugin-cson": "~2.0.1",
     "docpad-plugin-partials": "~2.6.3",
-    "docpad-plugin-livereload": "~2.4.0"
+    "docpad-plugin-livereload": "~2.5.3"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
