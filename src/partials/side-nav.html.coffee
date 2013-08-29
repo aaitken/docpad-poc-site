@@ -15,7 +15,7 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"/pages/plans/current-iteration.html", "Current Iteration"
 
-    section class:"section", ->
+    section class:"section requirements", ->
       p class:"title", ->
         a "Requirements"
       div class:"content", ->
@@ -24,7 +24,11 @@ div class:"large-3 pull-9 columns", ->
             a style:"cursor: default", "Placeholder"
           li class:"divider"
           li ->
-            a style:"cursor: default; font-style: italic", "Backlog"
+            a style:"font-style: italic", href:"/pages/requirements/feature-update-backlog.html", "Feature Update Backlog"
+          li ->
+            a style:"font-style: italic", href:"/pages/plans/current-iteration.html", "New Feature Backlog"
+          li ->
+            a style:"cursor: default; font-style: italic", "Jank"
 
     section class:"section", ->
       p class:"title", ->
