@@ -21,14 +21,14 @@ div class:"large-3 pull-9 columns", ->
       div class:"content", ->
         ul class:"side-nav", ->
           li ->
-            a style:"cursor: default", "Placeholder"
+            a href:"/pages/requirements/magazine.html", "Magazine"
           li class:"divider"
           li ->
             a style:"font-style: italic", href:"/pages/requirements/feature-update-backlog.html", "Feature Update Backlog"
           li ->
             a style:"font-style: italic", href:"/pages/requirements/new-feature-backlog.html", "New Feature Backlog"
           li ->
-            a style:"cursor: default; font-style: italic", "Jank"
+            a style:"font-style: italic", href:"/pages/requirements/jank.html", "Jank"
 
     section class:"section", ->
       p class:"title", ->
@@ -36,7 +36,7 @@ div class:"large-3 pull-9 columns", ->
       div class:"content", ->
         ul class:"side-nav", ->
           li ->
-            a style:"cursor: default", "Placeholder"
+            a href:"#", "Magazine"
 
     section class:"section status", ->
       p class:"title", ->
