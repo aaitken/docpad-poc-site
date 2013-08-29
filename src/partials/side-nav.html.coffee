@@ -36,7 +36,7 @@ div class:"large-3 pull-9 columns", ->
       div class:"content", ->
         ul class:"side-nav", ->
           li ->
-            a href:"#", "Magazine"
+            a style:"cursor: default; color: #aaa", href:"", "Magazine"
 
     section class:"section status", ->
       p class:"title", ->
@@ -46,8 +46,8 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"/pages/status/on-tap.html", "On Tap"
           li ->
-            a style:"cursor: default", "Meeting Minutes"
+            a style:"cursor: default; color: #aaa", "Meeting Minutes"
           li ->
-            a style:"cursor: default", "Weekly Report"
+            a style:"cursor: default; color: #aaa", "Weekly Report"
           li ->
             a href:"/pages/status/retainer-burndown.html", "Hours Burndown"
