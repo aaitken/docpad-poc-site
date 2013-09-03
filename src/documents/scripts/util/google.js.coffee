@@ -49,11 +49,11 @@ class window.MUSE.Google
   _makePromises: ->
     @jqxhr.done =>
       html = @jqxhr.responseText
-      $target = $('#target')
+      $target = $('#muse-target2')
       $target.html(html)
       $style = $target.find('style')
       text = $style.text()
-      text = '#target ' + text.replace(/}/g, '}#target ') #contextualize gdrive styles
+      text = '#muse-target2 ' + text.replace(/}/g, '}#muse-target2 ') #contextualize gdrive styles
       $style.text(text)
     @jqxhr.fail -> alert("error")
     @jqxhr.always ->
