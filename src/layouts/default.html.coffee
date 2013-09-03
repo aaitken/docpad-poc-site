@@ -29,6 +29,8 @@ html ->
       '/scripts/vendor/moment-2.1.0.js'
       '/scripts/namespaces.js'
       '/scripts/util/helpers.js'
+      '/scripts/util/google.js'
+      '/scripts/views/common/doc-metadata.js'
       '/scripts/views/common/nav-side.js'
       '/scripts/init.js'
       'https://apis.google.com/js/client.js?onload=handleClientLoad'].concat(@document.scripts)).toHTML())

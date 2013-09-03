@@ -7,8 +7,6 @@ styles: [
   '/styles/plans/product-plan.css'
   '/styles/plans/nav.css']
 scripts: [
-  '/scripts/util/google.js'
-  '/scripts/views/common/doc-metadata.js'
   '/scripts/pages/plans/product-plan.js'
   '/scripts/pages/all.js'
   '/scripts/pages/plans/all.js']

@@ -7,7 +7,6 @@ new MUSE.views.NavSide()
 #even though its invocation waits for the api onload
 #setInterval fights off race condition
 window.handleClientLoad = ->
-  console.log 'handleClientLoad'
   int = setInterval (->
     if window.handleClientLoad2
       window.handleClientLoad2()
