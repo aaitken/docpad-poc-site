@@ -1,26 +1,15 @@
 --- cson
 
-layout: 'default'
-description: 'Muse Studio'
+layout: 'gdrive-text-document'
+title: 'Feature Update Backlog'
+source: 'https://docs.google.com/a/factorylabs.com/document/d/1MmuAxkLaTfeKgDi-PPklsUW0_1yBzbxGzZwvLoZaz50/edit?usp=sharing'
+archives: 'https://drive.google.com/a/factorylabs.com/folderview?id=0B6bvj3nsGb1pdm5BblB1SlVCZ2s&usp=sharing'
 styles: [
   '/styles/requirements/feature-update-backlog.css'
   '/styles/requirements/nav.css']
 scripts: [
-  '/scripts/util/google.js'
   '/scripts/pages/requirements/feature-update-backlog.js'
   '/scripts/pages/all.js'
   '/scripts/pages/requirements/all.js']
 
 ---
-
-
-div class:'row', ->
-  div class:'large-9 push-3 columns', ->
-    div class:'row', ->
-      div class: 'large-12 columns', ->
-        h2 "Feature Update Backlog"
-        h5 class:"subheader", "key metadat, last update and author..."
-        div id:"target", style:"width:100%;"
-        input type:"button", id:"authorizeButton", style:"display:none", value:"Authorize"
-  
-  @partial('side-nav.html.coffee')

@@ -1,7 +1,9 @@
 --- cson
 
-layout: 'default'
-description: 'Muse Studio'
+layout: 'gdrive-text-document'
+title: 'Jank'
+source: 'https://docs.google.com/a/factorylabs.com/document/d/1brbzGVWRJOQgeRjOyjgnm_b_i-c1-NPjzdxicdD_G5g/edit?usp=sharing'
+archives: 'https://drive.google.com/a/factorylabs.com/folderview?id=0B6bvj3nsGb1pUDlSTVBhb2tlazA&usp=sharing'
 styles: [
   '/styles/requirements/jank.css'
   '/styles/requirements/nav.css']
@@ -12,15 +14,3 @@ scripts: [
   '/scripts/pages/requirements/all.js']
 
 ---
-
-
-div class:'row', ->
-  div class:'large-9 push-3 columns', ->
-    div class:'row', ->
-      div class: 'large-12 columns', ->
-        h2 "Jank"
-        h5 class:"subheader", "key metadat, last update and author..."
-        div id:"target", style:"width:100%;"
-        input type:"button", id:"authorizeButton", style:"display:none", value:"Authorize"
-  
-  @partial('side-nav.html.coffee')
