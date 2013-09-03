@@ -1,11 +1,24 @@
 //charset
 @charset "UTF-8"
 
+@import compass/css3
+
 //from the foundation submodule
 @import "src/foundation/scss/foundation"
 
 
-#muse-target1
+.muse-doc-loader
+  +transition-property(opacity)
+  +transition-duration(0.25s)
+  width: .75em
+  height: .75em
+  opacity: 1
+  vertical-align: baseline
+  &.is-hidden
+    opacity: 0
+
+
+.muse-target1
   hr,
   .button-group
     display: none
@@ -15,6 +28,8 @@
 
 
 //google
-#muse-target2
+.muse-target2
+  width: 100%
+
   .title
     display: none

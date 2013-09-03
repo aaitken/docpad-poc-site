@@ -61,6 +61,7 @@ class window.MUSE.Google
       text = $style.text()
       text = '#muse-target2 ' + text.replace(/}/g, '}#muse-target2 ') #contextualize gdrive styles
       $style.text(text)
+      @views.loader.remove()
     @jqxhr.fail -> alert("error")
     @jqxhr.always ->
 
