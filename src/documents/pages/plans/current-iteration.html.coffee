@@ -1,26 +1,15 @@
 --- cson
 
-layout: 'default'
-description: 'Muse Studio Current Theme'
+layout: 'gdrive-text-document'
+title: 'Current Iteration'
+source: 'https://docs.google.com/a/factorylabs.com/document/d/1E4hevt2Hipi75DF_GMfEkehJCTzr_ynDmSilfgWcDM4/edit?usp=sharing'
+archives: 'https://drive.google.com/a/factorylabs.com/folderview?id=0B6bvj3nsGb1pZzQybVIxTmhwUXM&usp=sharing'
 styles: [
   '/styles/plans/current-iteration.css'
   '/styles/plans/nav.css']
 scripts: [
-  '/scripts/util/google.js'
   '/scripts/pages/plans/current-iteration.js'
   '/scripts/pages/all.js'
   '/scripts/pages/plans/all.js']
 
 ---
-
-
-div class:'row', ->
-  div class:'large-9 push-3 columns', ->
-    div class:'row', ->
-      div class: 'large-12 columns', ->
-        h2 "Current Iteration"
-        h5 class:"subheader", "key metadata, last update and author..."
-        div id:"target", style:"width:100%;"
-        input type:"button", id:"authorizeButton", style:"display:none", value:"Authorize"
-  
-  @partial('side-nav.html.coffee')
