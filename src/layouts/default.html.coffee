@@ -31,6 +31,9 @@ html ->
       '/scripts/util/helpers.js'
       '/scripts/util/google.js'
       '/scripts/views/common/doc-metadata.js'
+      '/scripts/views/common/doc-buttons.js'
+      '/scripts/views/common/doc-loader.js'
+      '/scripts/views/common/doc-separator.js'
       '/scripts/views/common/nav-side.js'
       '/scripts/init.js'
       'https://apis.google.com/js/client.js?onload=handleClientLoad'].concat(@document.scripts)).toHTML())

@@ -15,7 +15,7 @@ div class:'row', ->
           text(@partial('source-links.html.coffee', {
             source: @document.source
             archives: @document.archives || '#'}))
-          hr()
+          hr id:"muse-doc-separator"
         div id:"muse-target2", style:"width:100%;"
         input type:"button", id:"authorizeButton", style:"display:none", value:"Authorize"
   
