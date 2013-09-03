@@ -6,7 +6,7 @@ class window.MUSE.Google
     @clientId = '646673521317.apps.googleusercontent.com' #from API console
     @documentId = options.documentId
     @html = html
-    @docMetaData = new MUSE.views.DocMetaData()
+    @docMetaDataView = new MUSE.views.DocMetaData()
     @scopes = [
       'https://www.googleapis.com/auth/drive'
       'https://www.googleapis.com/auth/drive.appdata'
@@ -32,8 +32,9 @@ class window.MUSE.Google
       request = gapi.client.drive.files.get({'fileId': @documentId})
       request.execute (resp)=>
         @resp = resp
-        @docMetaData.render(resp.lastModifyingUserName)
-        debugger
+        @docMetaDataView.render({
+          user: resp.lastModifyingUserName
+          time: resp.modifiedDate})
         if @html then @_getDocumentHtml()
 
 

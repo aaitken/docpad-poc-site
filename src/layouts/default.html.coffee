@@ -26,6 +26,7 @@ html ->
     text(@content)
     text(@getBlock('scripts').add([
       '/scripts/vendor/jquery-2.0.3.js'
+      '/scripts/vendor/moment-2.1.0.js'
       '/scripts/namespaces.js'
       '/scripts/util/helpers.js'
       '/scripts/views/common/nav-side.js'
