@@ -7,13 +7,13 @@
     "npm": "1.2"
   },
   "dependencies": {
-    "docpad": "6.x",
-    "docpad-plugin-coffeescript": "2.x",
-    "docpad-plugin-sass": "2.x",
-    "docpad-plugin-coffeekup": "2.x",
-    "docpad-plugin-cson": "2.x",
-    "docpad-plugin-partials": "2.x",
-    "docpad-plugin-livereload": "2.x"
+    "docpad": "~6.51.6",
+    "docpad-plugin-coffeescript": "~2.2.2",
+    "docpad-plugin-sass": "~2.6.0",
+    "docpad-plugin-coffeekup": "~2.2.0",
+    "docpad-plugin-cson": "~2.0.1",
+    "docpad-plugin-partials": "~2.8.0",
+    "docpad-plugin-livereload": "~2.5.3"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
