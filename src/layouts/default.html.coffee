@@ -3,8 +3,10 @@ html ->
 
   head ->
     
-    meta(charset:"utf-8")
-    title("Docpad")
+    meta charset:"utf-8"
+    meta name:"viewport", content:"width=device-width, user-scalable=true;"
+    title "Docpad"
+
     if @document.description?
       meta(name:"description", content:@document.description)
     

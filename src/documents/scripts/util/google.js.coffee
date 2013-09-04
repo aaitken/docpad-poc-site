@@ -40,7 +40,6 @@ class window.MUSE.Google
           user: resp.lastModifyingUserName
           time: resp.modifiedDate})
         @views.buttons.render()
-        @views.separator.render()
         if @html then @_getDocumentHtml()
 
 
@@ -62,6 +61,7 @@ class window.MUSE.Google
       text = '#muse-target2 ' + text.replace(/}/g, '}#muse-target2 ') #contextualize gdrive styles
       $style.text(text)
       @views.loader.remove()
+      @views.separator.render()
     @jqxhr.fail -> alert("error")
     @jqxhr.always ->
 
