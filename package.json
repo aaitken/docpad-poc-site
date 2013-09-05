@@ -13,13 +13,17 @@
     "docpad-plugin-coffeekup": "~2.2.0",
     "docpad-plugin-cson": "~2.0.1",
     "docpad-plugin-partials": "~2.8.0",
-    "docpad-plugin-livereload": "~2.5.3",
     "safeps": "~2.2.7",
     "grunt": "~0.4.1"
+    "grunt-contrib-uglify": "~0.2.4"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
     "start": "node_modules/docpad/bin/docpad-server"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "docpad-plugin-livereload": "~2.5.3"
+  }
+
+
 }
