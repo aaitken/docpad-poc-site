@@ -30,11 +30,13 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a style:"font-style: italic", href:"/pages/requirements/jank.html", "Jank"
 
-    section class:"section", ->
+    section class:"section concepts", ->
       p class:"title", ->
-        a "Prototypes"
+        a "Concepts"
       div class:"content", ->
         ul class:"side-nav", ->
+          li ->
+            a href:"/pages/concepts/contest-improvements.html", "Contest Improvements"
           li ->
             a style:"cursor: default; color: #aaa", href:"", "Magazine"
 
@@ -46,7 +48,7 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"/pages/status/on-tap.html", "On Tap"
           li ->
-            a href:"/pages/status/meeting-minutes.html", "Meeting Minutes"
+            a href:"/pages/status/meeting-minutes.html", "Meeting Recap"
           li ->
             a style:"cursor: default; color: #aaa", "Weekly Report"
           li ->
