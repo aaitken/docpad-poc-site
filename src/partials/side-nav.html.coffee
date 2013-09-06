@@ -46,7 +46,7 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"/pages/status/on-tap.html", "On Tap"
           li ->
-            a style:"cursor: default; color: #aaa", "Meeting Minutes"
+            a href:"/pages/status/meeting-minutes.html", "Meeting Minutes"
           li ->
             a style:"cursor: default; color: #aaa", "Weekly Report"
           li ->
