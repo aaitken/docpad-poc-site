@@ -26,16 +26,29 @@ html ->
         hr()
 
     text(@content)
-    text(@getBlock('scripts').add([
-      '/scripts/vendor/jquery-2.0.3.js'
-      '/scripts/vendor/moment-2.1.0.js'
-      '/scripts/namespaces.js'
-      '/scripts/util/helpers.js'
-      '/scripts/util/google.js'
-      '/scripts/views/common/doc-metadata.js'
-      '/scripts/views/common/doc-buttons.js'
-      '/scripts/views/common/doc-loader.js'
-      '/scripts/views/common/doc-separator.js'
-      '/scripts/views/common/nav-side.js'
-      '/scripts/init.js'
-      'https://apis.google.com/js/client.js?onload=handleClientLoad'].concat(@document.scripts)).toHTML())
+
+    #development
+    if @getEnvironment() is 'development'
+      text(@getBlock('scripts').add([
+        '/scripts/vendor/jquery-2.0.3.js'
+        '/scripts/vendor/moment-2.1.0.js'
+        '/scripts/namespaces.js'
+        '/scripts/util/helpers.js'
+        '/scripts/util/google.js'
+        '/scripts/views/common/doc-metadata.js'
+        '/scripts/views/common/doc-buttons.js'
+        '/scripts/views/common/doc-loader.js'
+        '/scripts/views/common/doc-separator.js'
+        '/scripts/views/common/nav-side.js'
+        '/scripts/init.js'
+        'https://apis.google.com/js/client.js?onload=handleClientLoad']
+        .concat(@document.scripts))
+        .toHTML())
+    #build
+    else
+      text(@getBlock('scripts').add([
+        '/scripts/app.js'
+        'https://apis.google.com/js/client.js?onload=handleClientLoad']
+        .concat(@document.scripts))
+        .toHTML())
+
