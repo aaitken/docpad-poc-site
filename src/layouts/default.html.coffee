@@ -42,13 +42,13 @@ html ->
         '/scripts/views/common/nav-side.js'
         '/scripts/init.js'
         'https://apis.google.com/js/client.js?onload=handleClientLoad']
-        .concat(@document.scripts))
+        .concat(@document.scripts.dev || @document.scripts))
         .toHTML())
     #build
     else
       text(@getBlock('scripts').add([
         '/scripts/app.js'
         'https://apis.google.com/js/client.js?onload=handleClientLoad']
-        .concat(@document.scripts))
+        .concat(@document.scripts.prod || @document.scripts))
         .toHTML())
 

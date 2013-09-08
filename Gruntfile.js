@@ -20,9 +20,14 @@ module.exports = function(grunt) {
             'out/scripts/views/common/doc-loader.js',
             'out/scripts/views/common/doc-separator.js',
             'out/scripts/views/common/nav-side.js',
-            'out/scripts/init.js']
-
-
+            'out/scripts/init.js'],
+          
+          //pages
+          'out/scripts/pages-plans-product-plan.js': [
+            'out/scripts/pages/plans/product-plan.js',
+            'out/scripts/pages/all.js',
+            'out/scripts/pages/plans/all.js']
+            
         }
       }
     }

@@ -6,9 +6,12 @@ source: 'https://docs.google.com/a/factorylabs.com/document/d/1HuYZbaWiLF5_gX7JR
 styles: [
   '/styles/plans/product-plan.css'
   '/styles/plans/nav.css']
-scripts: [
-  '/scripts/pages/plans/product-plan.js'
-  '/scripts/pages/all.js'
-  '/scripts/pages/plans/all.js']
+scripts:
+  dev: [
+    '/scripts/pages/plans/product-plan.js'
+    '/scripts/pages/all.js'
+    '/scripts/pages/plans/all.js']
+  prod: [
+    '/scripts/pages-plans-product-plan.js']
 
 ---
