@@ -2,6 +2,7 @@ module.exports = function(grunt) {
 
   //command availability
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   //==========================================================
 
@@ -27,7 +28,13 @@ module.exports = function(grunt) {
   config = {
     uglify: {
       my_target: {
-        files: {}}}};
+        files: {}}},
+    clean: [
+      scripts + 'app',
+      scripts + 'pages',
+      scripts + 'util',
+      scripts + 'vendor',
+      scripts + 'views']};
   //alias
   files = config.uglify.my_target.files;
 

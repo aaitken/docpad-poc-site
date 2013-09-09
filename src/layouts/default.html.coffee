@@ -40,15 +40,15 @@ html ->
         '/scripts/views/common/doc-loader.js'
         '/scripts/views/common/doc-separator.js'
         '/scripts/views/common/nav-side.js'
-        '/scripts/app/init.js'
-        'https://apis.google.com/js/client.js?onload=handleClientLoad']
-        .concat(@document.scripts.dev || @document.scripts))
+        '/scripts/app/init.js']
+        .concat(@document.scripts.dev || @document.scripts)
+        .concat(['https://apis.google.com/js/client.js?onload=handleClientLoad']))
         .toHTML())
     #build
     else
       text(@getBlock('scripts').add([
-        '/scripts/app.js'
-        'https://apis.google.com/js/client.js?onload=handleClientLoad']
-        .concat(@document.scripts.prod || @document.scripts))
+        '/scripts/app.js']
+        .concat(@document.scripts.prod || @document.scripts)
+        .concat(['https://apis.google.com/js/client.js?onload=handleClientLoad']))
         .toHTML())
 
