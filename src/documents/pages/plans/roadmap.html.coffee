@@ -6,9 +6,12 @@ source: 'https://docs.google.com/document/d/1hldsiViTglGZHeaNy1znu094Y5jVfb7iMZq
 styles: [
   '/styles/plans/roadmap.css'
   '/styles/plans/nav.css']
-scripts: [
-  '/scripts/pages/plans/roadmap.js'
-  '/scripts/pages/all.js'
-  '/scripts/pages/plans/all.js']
+scripts:
+  dev: [
+    '/scripts/pages/plans/roadmap.js'
+    '/scripts/pages/all.js'
+    '/scripts/pages/plans/all.js']
+  prod: [
+    '/scripts/pages-plans-roadmap.js']
 
 ---

@@ -12,6 +12,6 @@ scripts:
     '/scripts/pages/all.js'
     '/scripts/pages/plans/all.js']
   prod: [
-    '/scripts/pages-plans-product-plan.js']
+    '/scripts/pages-plans-productplan.js']
 
 ---
