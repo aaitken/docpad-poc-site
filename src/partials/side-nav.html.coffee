@@ -53,3 +53,5 @@ div class:"large-3 pull-9 columns", ->
             a href:"/pages/status/weekly-report.html", "Weekly Report"
           li ->
             a href:"/pages/status/retainer-burndown.html", "Hours Burndown"
+          li ->
+            a style:"cursor: default; color: #aaa", href:"", "Calendar"
