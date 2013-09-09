@@ -6,9 +6,12 @@ source: 'https://docs.google.com/a/factorylabs.com/document/d/177GYcFIjLdH04yQlo
 styles: [
   '/styles/requirements/nfr-magazine.css'
   '/styles/requirements/nav.css']
-scripts: [
-  '/scripts/pages/requirements/nfr-magazine.js'
-  '/scripts/pages/all.js'
-  '/scripts/pages/requirements/all.js']
+scripts:
+  dev: [
+    '/scripts/pages/requirements/nfr-magazine.js'
+    '/scripts/pages/all.js'
+    '/scripts/pages/requirements/all.js']
+  prod: [
+    '/scripts/pages-requirements-nfrmagazine.js']
 
 ---

@@ -12,7 +12,16 @@ module.exports = function(grunt) {
   sections = {
     plans: [
       scripts+'pages/all.js',
-      scripts+'pages/plans/all.js']};
+      scripts+'pages/plans/all.js'],
+    requirements: [
+      scripts+'pages/all.js',
+      scripts+'pages/requirements/all.js'],
+    concepts: [
+      scripts+'pages/all.js',
+      scripts+'pages/concepts/all.js'],
+    status: [
+      scripts+'pages/all.js',
+      scripts+'pages/status/all.js']};
 
   //core uglify configuration object
   config = {
@@ -41,6 +50,28 @@ module.exports = function(grunt) {
     scripts+'pages/plans/current-theme.js'].concat(sections.plans);
   files[scripts + 'pages-plans-currentiteration.js'] = [
     scripts+'pages/plans/current-iteration.js'].concat(sections.plans);
+
+  //requirements pages
+  files[scripts + 'pages-requirements-featureupdatebacklog.js'] = [
+    scripts+'pages/requirements/feature-update-backlog.js'].concat(sections.requirements);
+  files[scripts + 'pages-requirements-jank.js'] = [
+    scripts+'pages/requirements/jank.js'].concat(sections.requirements);
+  files[scripts + 'pages-requirements-newfeaturebacklog.js'] = [
+    scripts+'pages/requirements/new-feature-backlog.js'].concat(sections.requirements);
+  files[scripts + 'pages-requirements-nfrmagazine.js'] = [
+    scripts+'pages/requirements/nfr-magazine.js'].concat(sections.requirements);
+
+  //concepts
+  files[scripts + 'pages-concepts-contestimprovements.js'] = [
+    scripts+'pages/concepts/contest-improvements.js'].concat(sections.concepts);
+    
+  //status pages
+  files[scripts + 'pages-status-meetingminutes.js'] = [
+    scripts+'pages/status/meeting-minutes.js'].concat(sections.status);
+  files[scripts + 'pages-status-ontap.js'] = [
+    scripts+'pages/status/on-tap.js'].concat(sections.status);
+  files[scripts + 'pages-status-weeklyreport.js'] = [
+    scripts+'pages/status/weekly-report.js'].concat(sections.status);
 
   //==========================================================
 

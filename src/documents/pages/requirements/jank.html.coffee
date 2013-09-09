@@ -7,10 +7,15 @@ archives: 'https://drive.google.com/a/factorylabs.com/folderview?id=0B6bvj3nsGb1
 styles: [
   '/styles/requirements/jank.css'
   '/styles/requirements/nav.css']
-scripts: [
-  '/scripts/util/google.js'
-  '/scripts/pages/requirements/jank.js'
-  '/scripts/pages/all.js'
-  '/scripts/pages/requirements/all.js']
+scripts:
+  dev: [
+    '/scripts/util/google.js'
+    '/scripts/pages/requirements/jank.js'
+    '/scripts/pages/all.js'
+    '/scripts/pages/requirements/all.js']
+  prod: [
+     '/scripts/pages-requirements-jank.js']
+    
+
 
 ---

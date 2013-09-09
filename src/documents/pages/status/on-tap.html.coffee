@@ -7,9 +7,12 @@ archives: 'https://drive.google.com/a/factorylabs.com/folderview?id=0B6bvj3nsGb1
 styles: [
   '/styles/status/on-tap.css'
   '/styles/status/nav.css']
-scripts: [
-  '/scripts/pages/status/on-tap.js'
-  '/scripts/pages/all.js'
-  '/scripts/pages/status/all.js']
+scripts:
+  dev: [
+    '/scripts/pages/status/on-tap.js'
+    '/scripts/pages/all.js'
+    '/scripts/pages/status/all.js']
+  prod: [
+    '/scripts/pages-status-ontap.js']
 
 ---

@@ -7,9 +7,12 @@ archives: 'https://drive.google.com/a/factorylabs.com/folderview?id=0B6bvj3nsGb1
 styles: [
   '/styles/status/meeting-minutes.css'
   '/styles/status/nav.css']
-scripts: [
-  '/scripts/pages/status/meeting-minutes.js'
-  '/scripts/pages/all.js'
-  '/scripts/pages/status/all.js']
+scripts:
+  dev: [
+    '/scripts/pages/status/meeting-minutes.js'
+    '/scripts/pages/all.js'
+    '/scripts/pages/status/all.js']
+  prod: [
+    '/scripts/pages-status-meetingminutes.js']
 
 ---

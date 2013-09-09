@@ -7,9 +7,12 @@ archives: 'https://drive.google.com/a/factorylabs.com/folderview?id=0B6bvj3nsGb1
 styles: [
   '/styles/requirements/new-feature-backlog.css'
   '/styles/requirements/nav.css']
-scripts: [
-  '/scripts/pages/requirements/new-feature-backlog.js'
-  '/scripts/pages/all.js'
-  '/scripts/pages/requirements/all.js']
+scripts:
+  dev: [
+    '/scripts/pages/requirements/new-feature-backlog.js'
+    '/scripts/pages/all.js'
+    '/scripts/pages/requirements/all.js']
+  prod: [
+    '/scripts/pages-requirements-newfeaturebacklog.js']
 
 ---
