@@ -26,17 +26,11 @@ module.exports = function(grunt) {
 
   //app 
   files[scripts + 'app.js'] = [
-    scripts+'vendor/jquery-2.0.3.js',
-    scripts+'vendor/moment-2.1.0.js',
-    scripts+'namespaces.js',
-    scripts+'util/helpers.js',
-    scripts+'util/google.js',
-    scripts+'views/common/doc-metadata.js',
-    scripts+'views/common/doc-buttons.js',
-    scripts+'views/common/doc-loader.js',
-    scripts+'views/common/doc-separator.js',
-    scripts+'views/common/nav-side.js',
-    scripts+'init.js'];
+    scripts+'vendor/*',
+    scripts+'app/namespaces.js',
+    scripts+'util/*',
+    scripts+'views/common/*',
+    scripts+'app/init.js'];
  
   //plans pages
   files[scripts + 'pages-plans-productplan.js'] = [
