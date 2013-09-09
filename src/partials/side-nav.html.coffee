@@ -50,6 +50,6 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"/pages/status/meeting-minutes.html", "Meeting Recap"
           li ->
-            a style:"cursor: default; color: #aaa", "Weekly Report"
+            a href:"/pages/status/weekly-report.html", "Weekly Report"
           li ->
             a href:"/pages/status/retainer-burndown.html", "Hours Burndown"
