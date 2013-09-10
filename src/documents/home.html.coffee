@@ -2,8 +2,7 @@
 
 layout: 'default'
 description: 'Muse Studio Product Documentation'
-scripts: [
-  '/scripts/pages/all.js']
+scripts: []
 
 ---
 
