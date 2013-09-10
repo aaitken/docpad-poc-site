@@ -18,7 +18,11 @@ html ->
       ul class:"title-area", ->
         li class:"name", ->
           h1 ->
-            a(href:"/", "Muse Studio")
+            a href:"/", "Muse Studio"
+        li class:"toggle-topbar menu-icon", ->
+          a href:"#", ->
+            span "Menu"
+
 
     div class:"row", ->
       div class:"large-12 columns", ->
