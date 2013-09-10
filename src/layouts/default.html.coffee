@@ -20,7 +20,7 @@ html ->
           h1 ->
             a href:"/", "Muse Studio"
         li class:"toggle-topbar menu-icon", ->
-          a href:"#", ->
+          a href:"#nav-side", ->
             span "Menu"
 
 
