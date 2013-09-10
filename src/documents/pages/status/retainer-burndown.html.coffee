@@ -5,11 +5,12 @@ description: 'Muse Studio Hours Burndown'
 styles: [
   '/styles/status/retainer-burndown.css'
   '/styles/status/nav.css']
-scripts: [
-  #'/scripts/util/google.js'
-  #'/scripts/pages/status/retainer-burndown.js'
-  '/scripts/pages/all.js'
-  '/scripts/pages/status/all.js']
+scripts:
+  dev: [
+    '/scripts/pages/all.js'
+    '/scripts/pages/status/all.js']
+  prod: [
+    '/scripts/pages-status-retainerburndown.js']
 
 ---
 
