@@ -4,7 +4,7 @@ html ->
   head ->
     
     meta charset:"utf-8"
-    meta name:"viewport", content:"width=device-width, user-scalable=true;"
+    meta name:"viewport", content:"width=device-width"
     title "Docpad"
 
     if @document.description?
