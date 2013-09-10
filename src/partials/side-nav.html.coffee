@@ -54,4 +54,4 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"/pages/status/retainer-burndown.html", "Hours Burndown"
           li ->
-            a style:"cursor: default; color: #aaa", href:"", "Calendar"
+            a href:"/pages/status/calendar.html", "Calendar"

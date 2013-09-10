@@ -80,6 +80,7 @@ module.exports = function(grunt) {
   files[scripts + 'pages-status-weeklyreport.js'] = [
     scripts+'pages/status/weekly-report.js'].concat(sections.status);
   files[scripts + 'pages-status-retainerburndown.js'] = sections.status;
+  files[scripts + 'pages-status-calendar.js'] = sections.status;
 
   //==========================================================
 
