@@ -14,14 +14,14 @@ html ->
 
   body ->
 
-    nav class:"top-bar", ->
+    nav id:"muse-nav-top", class:"top-bar", ->
       ul class:"title-area", ->
         li class:"name", ->
           h1 ->
             a href:"/", "Muse Studio"
         li class:"toggle-topbar menu-icon", ->
-          a href:"#nav-side", ->
-            span "Menu"
+          a href:"#muse-nav-bottom", ->
+            span "&nbsp;"
 
 
     div class:"row", ->

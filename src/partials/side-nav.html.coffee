@@ -1,6 +1,14 @@
 div class:"large-3 pull-9 columns", ->
+
+  nav id:"muse-nav-bottom", class:"top-bar", ->
+    ul class:"title-area", ->
+      li class:"name", ->
+        h1 "&nbsp;"
+      li class:"toggle-topbar menu-icon", ->
+        a href:"#muse-nav-top", ->
+          span "&nbsp;"
+
   div class:"section-container accordion", id:"nav-side", ->
-    
     section class:"section plans", ->
       p class:"title", ->
         a "Plans"

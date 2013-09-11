@@ -37,7 +37,28 @@
 
 
 //nav
+.row
+  .top-bar
+    display: none
+
 @media only screen and (max-width: 768px)
   .accordion
-    margin-top: 10em
     margin-bottom: 15em
+
+  .row
+    .top-bar
+      display: block
+      margin-top: 2em
+      margin-bottom: 0
+      background: transparent
+      border-top: 1px solid rgb(230, 230, 230)
+
+      .toggle-topbar.menu-icon
+        right: 0
+
+        a
+          color: #000
+          
+          span
+            -webkit-box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black
+            box-shadow: 0 10px 0 1px black, 0 16px 0 1px black, 0 22px 0 1px black
