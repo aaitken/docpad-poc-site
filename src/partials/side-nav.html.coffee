@@ -56,7 +56,7 @@ div class:"large-3 pull-9 columns", ->
           li ->
             a href:"/pages/status/on-tap.html", "On Tap"
           li ->
-            a href:"/pages/status/meeting-minutes.html", "Meeting Recap"
+            a href:"/pages/status/meeting-minutes.html", "Meeting Recaps"
           li ->
             a href:"/pages/status/weekly-report.html", "Weekly Report"
           li ->
