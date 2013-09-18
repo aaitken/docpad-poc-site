@@ -17,6 +17,9 @@ module.exports = function(grunt) {
     requirements: [
       scripts+'pages/all.js',
       scripts+'pages/requirements/all.js'],
+    backlogs: [
+      scripts+'pages/all.js',
+      scripts+'pages/backlogs/all.js'],
     concepts: [
       scripts+'pages/all.js',
       scripts+'pages/concepts/all.js'],
@@ -59,18 +62,21 @@ module.exports = function(grunt) {
     scripts+'pages/plans/current-iteration.js'].concat(sections.plans);
 
   //requirements pages
-  files[scripts + 'pages-requirements-featureupdatebacklog.js'] = [
-    scripts+'pages/requirements/feature-update-backlog.js'].concat(sections.requirements);
-  files[scripts + 'pages-requirements-jank.js'] = [
-    scripts+'pages/requirements/jank.js'].concat(sections.requirements);
-  files[scripts + 'pages-requirements-newfeaturebacklog.js'] = [
-    scripts+'pages/requirements/new-feature-backlog.js'].concat(sections.requirements);
   files[scripts + 'pages-requirements-nfrmagazine.js'] = [
     scripts+'pages/requirements/nfr-magazine.js'].concat(sections.requirements);
 
+  //backlogs
+  files[scripts + 'pages-backlogs-featureupdatebacklog.js'] = [
+    scripts+'pages/backlogs/feature-update-backlog.js'].concat(sections.backlogs);
+  files[scripts + 'pages-backlogs-jank.js'] = [
+    scripts+'pages/backlogs/jank.js'].concat(sections.backlogs);
+  files[scripts + 'pages-backlogs-newfeaturebacklog.js'] = [
+    scripts+'pages/backlogs/new-feature-backlog.js'].concat(sections.backlogs);
+
+
   //concepts
   files[scripts + 'pages-concepts-contestimprovements.js'] = [
-    scripts+'pages/concepts/contest-improvements.js'].concat(sections.concepts);
+    scripts+'pages/concepts/contest-improvements.js'].concat(sections.concepts);  
     
   //status pages
   files[scripts + 'pages-status-meetingminutes.js'] = [

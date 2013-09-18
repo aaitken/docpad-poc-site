@@ -1,2 +1,2 @@
 #flicker avoidance
-MUSE.helpers.avoidFlicker(4)
+MUSE.helpers.avoidFlicker(5)

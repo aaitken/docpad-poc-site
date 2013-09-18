@@ -9,57 +9,62 @@ div class:"large-3 pull-9 columns", ->
           span "&nbsp;"
 
   div class:"section-container accordion", id:"nav-side", ->
-    section class:"section plans", ->
+    section class:"section muse-plans", ->
       p class:"title", ->
         a "Plans"
       div class:"content", ->
         ul class:"side-nav", ->
-          li ->
+          li class:"muse-product-plan", ->
             a href:"/pages/plans/product-plan.html", "Product Plan"
-          li ->
+          li class:"muse-roadmap", ->
             a href:"/pages/plans/roadmap.html", "Roadmap"
-          li ->
+          li class:"muse-current-theme", ->
             a href:"/pages/plans/current-theme.html", "Current Theme"
-          li ->
+          li class:"muse-current-iteration", ->
             a href:"/pages/plans/current-iteration.html", "Current Iteration"
 
-    section class:"section requirements", ->
+    section class:"section muse-requirements", ->
       p class:"title", ->
         a "Requirements"
       div class:"content", ->
         ul class:"side-nav", ->
-          li ->
-            a href:"/pages/requirements/nfr-magazine.html", "NFR Magazine"
-          li class:"divider"
-          li ->
-            a style:"font-style: italic", href:"/pages/requirements/feature-update-backlog.html", "Feature Update Backlog"
-          li ->
-            a style:"font-style: italic", href:"/pages/requirements/new-feature-backlog.html", "New Feature Backlog"
-          li ->
-            a style:"font-style: italic", href:"/pages/requirements/jank.html", "Jank"
+          li class:"muse-magazine", ->
+            a href:"/pages/requirements/nfr-magazine.html", "Magazine"
 
-    section class:"section concepts", ->
+    section class:"section muse-backlogs", ->
+      p class:"title", ->
+        a "Backlogs"
+      div class:"content", ->
+        ul class:"side-nav", ->
+          li class:"muse-feature-update-backlog", ->
+            a href:"/pages/backlogs/feature-update-backlog.html", "Feature Update Backlog"
+          li class:"muse-new-feature-backlog", ->
+            a href:"/pages/backlogs/new-feature-backlog.html", "New Feature Backlog"
+          li class:"muse-jank", ->
+            a href:"/pages/backlogs/jank.html", "Jank"
+
+    section class:"section muse-concepts", ->
       p class:"title", ->
         a "Concepts"
       div class:"content", ->
         ul class:"side-nav", ->
-          li ->
+          li class:"muse-contest-improvements", ->
             a href:"/pages/concepts/contest-improvements.html", "Contest Improvements"
           li ->
             a style:"cursor: default; color: #aaa", href:"", "Magazine"
 
-    section class:"section status", ->
+    section class:"section muse-status", ->
       p class:"title", ->
         a "Status"
       div class:"content", ->
         ul class:"side-nav", ->
-          li ->
+          li class:"muse-on-tap", ->
             a href:"/pages/status/on-tap.html", "On Tap"
-          li ->
+          li class:"muse-meeting-recaps", ->
             a href:"/pages/status/meeting-minutes.html", "Meeting Recaps"
-          li ->
+          li class:"muse-weekly-report", ->
             a href:"/pages/status/weekly-report.html", "Weekly Report"
-          li ->
+          li class:"muse-hours-burndown", ->
             a href:"/pages/status/retainer-burndown.html", "Hours Burndown"
-          li ->
+          li class:"muse-calendar", ->
             a href:"/pages/status/calendar.html", "Calendar"
