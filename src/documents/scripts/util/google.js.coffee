@@ -12,10 +12,10 @@ class window.MUSE.Google
       loader: new MUSE.views.DocLoader()
       separator: new MUSE.views.DocSeparator()}
     @scopes = [
-      'https://www.googleapis.com/auth/drive'
-      'https://www.googleapis.com/auth/drive.appdata'
-      'https://www.googleapis.com/auth/drive.apps.readonly'
-      'https://www.googleapis.com/auth/drive.file'
+      #'https://www.googleapis.com/auth/drive'
+      #'https://www.googleapis.com/auth/drive.appdata'
+      #'https://www.googleapis.com/auth/drive.apps.readonly'
+      #'https://www.googleapis.com/auth/drive.file'
       'https://www.googleapis.com/auth/drive.metadata.readonly'
       'https://www.googleapis.com/auth/drive.readonly']
     @_init()
