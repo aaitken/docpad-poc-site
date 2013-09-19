@@ -7,4 +7,4 @@ scripts: []
 ---
 
 img src:"/images/prototypes/contest/02_Interstitial.png"
-a id:"hot-spot", class:"hot-spot one"
+a id:"hot-spot", class:"hot-spot one", href: "dashboard.html"
