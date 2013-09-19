@@ -1,11 +1,10 @@
 --- cson
 
 layout: 'prototype'
-styles: []
+styles: ['/styles/prototypes/contest/landing-anonymous.css']
 scripts: []
 
 ---
 
-div class:"container", ->
-  img src:"/images/prototypes/contest/00_Landing_NewUser.png"
-div class:"line"
+img src:"/images/prototypes/contest/00_Landing_NewUser.png"
+a id:"hot-spot", class:"hot-spot one"

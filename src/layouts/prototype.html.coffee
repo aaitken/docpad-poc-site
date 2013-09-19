@@ -10,8 +10,12 @@ html ->
     @getBlock('styles').add(['/styles/prototypes/all.css'].concat(@document.styles)).toHTML()
 
   body ->
+    div class:"container", ->
 
-    text(@content)
+      text(@content)
+
+    div class:"nav"
+    
     text(@getBlock('scripts').add([
       '/scripts/vendor/jquery-2.0.3.js']
       .concat(@document.scripts))
