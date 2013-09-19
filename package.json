@@ -7,7 +7,7 @@
     "npm": "1.2"
   },
   "dependencies": {
-    "docpad": "~6.52.1",
+    "docpad": "~6.53.0",
     "docpad-plugin-coffeescript": "~2.2.2",
     "docpad-plugin-sass": "~2.6.0",
     "docpad-plugin-coffeekup": "~2.2.0",
