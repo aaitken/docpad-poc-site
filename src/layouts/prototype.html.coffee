@@ -17,6 +17,7 @@ html ->
     div class:"nav"
     
     text(@getBlock('scripts').add([
+      '/scripts/vendor/modernizr-2.6.2.js'
       '/scripts/vendor/jquery-2.0.3.js']
       .concat(@document.scripts))
       .toHTML())
