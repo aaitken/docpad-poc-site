@@ -5,7 +5,7 @@ html ->
     
     meta charset:"utf-8"
     meta name:"viewport", content:"width=device-width"
-    title "Docpad"
+    title "Muse Studio"
 
     if @document.description?
       meta(name:"description", content:@document.description)
