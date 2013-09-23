@@ -15,13 +15,13 @@ div class:"large-3 pull-9 columns", ->
       div class:"content", ->
         ul class:"side-nav", ->
           li class:"muse-product-plan", ->
-            a href:"/pages/plans/product-plan.html", "Product Plan"
+            a style:"color: #c60f13", href:"/pages/plans/product-plan.html", "Product Plan"
           li class:"muse-roadmap", ->
-            a href:"/pages/plans/roadmap.html", "Roadmap"
+            a style:"color: #c60f13", href:"/pages/plans/roadmap.html", "Roadmap"
           li class:"muse-current-theme", ->
-            a href:"/pages/plans/current-theme.html", "Current Theme"
+            a style:"color: #c60f13", href:"/pages/plans/current-theme.html", "Current Theme"
           li class:"muse-current-iteration", ->
-            a href:"/pages/plans/current-iteration.html", "Current Iteration"
+            a href:"/pages/plans/current-iteration.html", "Iterations"
 
     section class:"section muse-requirements", ->
       p class:"title", ->
@@ -63,7 +63,7 @@ div class:"large-3 pull-9 columns", ->
           li class:"muse-meeting-recaps", ->
             a href:"/pages/status/meeting-minutes.html", "Meeting Recaps"
           li class:"muse-weekly-report", ->
-            a href:"/pages/status/weekly-report.html", "Weekly Report"
+            a style:"color: #c60f13", href:"/pages/status/weekly-report.html", "Weekly Report"
           li class:"muse-hours-burndown", ->
             a href:"/pages/status/retainer-burndown.html", "Hours Burndown"
           li class:"muse-calendar", ->

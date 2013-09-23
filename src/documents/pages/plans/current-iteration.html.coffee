@@ -1,7 +1,7 @@
 --- cson
 
 layout: 'gdrive-text-document'
-title: 'Current Iteration'
+title: 'Iterations'
 source: 'https://docs.google.com/a/factorylabs.com/document/d/1E4hevt2Hipi75DF_GMfEkehJCTzr_ynDmSilfgWcDM4/edit?usp=sharing'
 archives: 'https://drive.google.com/a/factorylabs.com/folderview?id=0B6bvj3nsGb1pZzQybVIxTmhwUXM&usp=sharing'
 styles: [
