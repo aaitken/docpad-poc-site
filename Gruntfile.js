@@ -7,7 +7,7 @@ module.exports = function(grunt) {
   //==========================================================
 
   //outputted scripts dir
-  scripts = 'out/scripts/';
+  scripts = 'out/site/scripts/';
   
   //section-common script assembly
   sections = {
@@ -72,7 +72,6 @@ module.exports = function(grunt) {
     scripts+'pages/backlogs/jank.js'].concat(sections.backlogs);
   files[scripts + 'pages-backlogs-newfeaturebacklog.js'] = [
     scripts+'pages/backlogs/new-feature-backlog.js'].concat(sections.backlogs);
-
 
   //concepts
   files[scripts + 'pages-concepts-contestimprovements.js'] = [
