@@ -12,10 +12,6 @@ class window.MUSE.Google
       loader: new MUSE.views.DocLoader()
       separator: new MUSE.views.DocSeparator()}
     @scopes = [
-      #'https://www.googleapis.com/auth/drive'
-      #'https://www.googleapis.com/auth/drive.appdata'
-      #'https://www.googleapis.com/auth/drive.apps.readonly'
-      #'https://www.googleapis.com/auth/drive.file'
       'https://www.googleapis.com/auth/drive.metadata.readonly'
       'https://www.googleapis.com/auth/drive.readonly']
     @_init()
@@ -62,8 +58,11 @@ class window.MUSE.Google
       $style.text(text)
       @views.loader.remove()
       @views.separator.render()
-    @jqxhr.fail -> alert("error")
-    @jqxhr.always ->
+      if @pagePromisee then @pagePromisee()
+    @jqxhr.fail => alert("error")
+    @jqxhr.always =>
+
+
 
 
   _handleAuthResult: (authResult)->
