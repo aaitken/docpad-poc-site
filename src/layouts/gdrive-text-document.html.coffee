@@ -11,7 +11,7 @@ div class:'row', ->
       div class: 'large-12 columns', ->
         h2 ->
           text(@document.title)
-          img id:"muse-doc-loader", class:"muse-doc-loader", src:"/images/ajax-loader.gif"
+          img id:"muse-doc-loader", class:"muse-doc-loader", src:"/site/images/ajax-loader.gif"
         div id:"muse-target1", class:"muse-target1", ->
           h5 id:"muse-doc-metadata", class:"subheader", "&nbsp;"
           text(@partial('source-links.html.coffee', {

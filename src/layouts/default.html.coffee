@@ -10,7 +10,7 @@ html ->
     if @document.description?
       meta(name:"description", content:@document.description)
     
-    @getBlock('styles').add(['/styles/app.css'].concat(@document.styles)).toHTML()
+    @getBlock('styles').add(['/site/styles/app.css'].concat(@document.styles)).toHTML()
 
   body ->
 
@@ -34,24 +34,24 @@ html ->
     #development
     if @getEnvironment() is 'development'
       text(@getBlock('scripts').add([
-        '/scripts/vendor/jquery-2.0.3.js'
-        '/scripts/vendor/moment-2.1.0.js'
-        '/scripts/app/namespaces.js'
-        '/scripts/util/helpers.js'
-        '/scripts/util/google.js'
-        '/scripts/views/common/doc-metadata.js'
-        '/scripts/views/common/doc-buttons.js'
-        '/scripts/views/common/doc-loader.js'
-        '/scripts/views/common/doc-separator.js'
-        '/scripts/views/common/nav-side.js'
-        '/scripts/app/init.js']
+        '/site/scripts/vendor/jquery-2.0.3.js'
+        '/site/scripts/vendor/moment-2.1.0.js'
+        '/site/scripts/app/namespaces.js'
+        '/site/scripts/util/helpers.js'
+        '/site/scripts/util/google.js'
+        '/site/scripts/views/common/doc-metadata.js'
+        '/site/scripts/views/common/doc-buttons.js'
+        '/site/scripts/views/common/doc-loader.js'
+        '/site/scripts/views/common/doc-separator.js'
+        '/site/scripts/views/common/nav-side.js'
+        '/site/scripts/app/init.js']
         .concat(@document.scripts.dev || @document.scripts)
         .concat(['https://apis.google.com/js/client.js?onload=handleClientLoad']))
         .toHTML())
     #build
     else
       text(@getBlock('scripts').add([
-        '/scripts/app.js']
+        '/site/scripts/app.js']
         .concat(@document.scripts.prod || @document.scripts)
         .concat(['https://apis.google.com/js/client.js?onload=handleClientLoad']))
         .toHTML())
