@@ -5,7 +5,7 @@ MUSE.google = new MUSE.Google({documentId: '1Oxpcx_j-yJe1e6k2lBLMtjjFGmp6kkuVkrO
 MUSE.google.pagePromisee = ->
   
   #interrogate google nodes and class names
-  $header = $('#muse-target2 h1')
+  $header = $('#muse-target2 h1:eq(0)')
   para = $header.prev()[0]
   span = $(para).find('span')[0]
   link = $(span).find('a')[0]

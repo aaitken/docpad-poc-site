@@ -29,7 +29,7 @@ div class:"large-3 pull-9 columns", ->
       div class:"content", ->
         ul class:"side-nav", ->
           li class:"muse-magazine", ->
-            a href:"/site/pages/requirements/nfr-magazine.html", "Magazine"
+            a style:"color: #c60f13", href:"/site/pages/requirements/nfr-magazine.html", "Magazine"
 
     section class:"section muse-backlogs", ->
       p class:"title", ->
