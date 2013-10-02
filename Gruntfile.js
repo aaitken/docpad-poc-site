@@ -76,6 +76,8 @@ module.exports = function(grunt) {
   //concepts
   files[scripts + 'pages-concepts-contestimprovements.js'] = [
     scripts+'pages/concepts/contest-improvements.js'].concat(sections.concepts);  
+  files[scripts + 'pages-concepts-logline.js'] = [
+    scripts+'pages/concepts/logline.js'].concat(sections.concepts);
     
   //status pages
   files[scripts + 'pages-status-meetingminutes.js'] = [

@@ -48,6 +48,8 @@ div class:"large-3 pull-9 columns", ->
         a "Concepts"
       div class:"content", ->
         ul class:"side-nav", ->
+          li class:"muse-logline", ->
+            a href:"/site/pages/concepts/logline.html", "Logline"
           li class:"muse-contest-improvements", ->
             a href:"/site/pages/concepts/contest-improvements.html", "Contest Improvements"
           li ->
