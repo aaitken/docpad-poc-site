@@ -52,6 +52,8 @@ div class:"large-3 pull-9 columns", ->
             a href:"/site/pages/concepts/logline.html", "Logline"
           li class:"muse-contest-improvements", ->
             a href:"/site/pages/concepts/contest-improvements.html", "Contest Improvements"
+          li class:"muse-design-studio", ->
+            a href:"/site/pages/concepts/design-studio.html", "Design Studio"
           li ->
             a style:"cursor: default; color: #aaa", href:"", "Magazine"
 
